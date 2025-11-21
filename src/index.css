@@ -1,0 +1,32 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Comportamiento de scroll suave para toda la página */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos para la barra de desplazamiento (Scrollbar) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1; /* Color gris suave */
+  border-radius: 5px;
+}
+
+/* Scrollbar en modo oscuro */
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #475569; /* Color gris oscuro */
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
