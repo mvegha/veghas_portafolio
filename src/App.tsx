@@ -6,7 +6,7 @@ import './index.css';
 import Navbar from './components/Navbar';
 import Hero from './components/hero/Hero';
 import Experience from './components/experience/Experience';
-// import About from './components/About';
+import About from './components/about/About';
 
 import skills from './data/skills/skills';
 import projects from './data/projects/projects';
@@ -46,7 +46,7 @@ const App: React.FC = () => {
         <Hero />
 
         {/* ABOUT: Sección Sobre Mí */}
-        {/* <About /> */}
+        <About />
 
         {/* SKILLS: Stack Tecnológico */}
         <section id="habilidades" className="py-20 bg-white dark:bg-gray-900 transition-colors">
