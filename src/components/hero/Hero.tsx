@@ -1,21 +1,35 @@
 import { Github, Linkedin, Mail, ArrowRight, Download } from 'lucide-react';
 
+import availabilityData from '../../data/availability/availability';
+
+import statusConfig from './statusConfig';
+
 const Hero = () => {
+  // 2. Buscamos la opción activa basada en el status configurado
+  const activeStatus =
+    availabilityData.options.find(option => option.status === availabilityData.status) || availabilityData.options[0];
+
+  const visual = statusConfig[activeStatus.status];
+
   return (
     <section id="inicio" className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
           {/* Columna Izquierda: Contenido */}
           <div className="md:w-1/2 text-center md:text-left animate-slide-up">
-            {/* Badge de Disponibilidad */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-900/30 border border-indigo-100 dark:border-indigo-800 mb-6">
+            {/* Badge de Disponibilidad Dinámico */}
+            <div
+              className={`inline-flex items-center gap-2 px-3 py-1 rounded-full border mb-6 transition-colors duration-300 ${visual.bg} ${visual.border}`}
+            >
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                {activeStatus.status !== 'unavailable' && (
+                  <span
+                    className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${visual.pulse}`}
+                  ></span>
+                )}
+                <span className={`relative inline-flex rounded-full h-2 w-2 ${visual.dot}`}></span>
               </span>
-              <span className="text-sm font-semibold text-indigo-700 dark:text-indigo-300">
-                Disponible para trabajar
-              </span>
+              <span className={`text-sm font-semibold ${visual.text}`}>{activeStatus.text}</span>
             </div>
 
             {/* Título Principal */}
