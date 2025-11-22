@@ -6,6 +6,7 @@ export interface Project {
   tags: string[];
   github: string;
   demo: string;
+  isArchitecturalDiagram: boolean;
 }
 
 export interface Skill {

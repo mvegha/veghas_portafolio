@@ -1,12 +1,12 @@
 import React from 'react';
-import { Github, ExternalLink } from 'lucide-react';
 
-import Hero from '../../components/hero/Hero';
+import Hero from '../../components/home/Hero';
 import About from '../../components/about/About';
 import Experience from '../../components/experience/Experience';
 
+import Project from '../../views/project/Project';
+
 import skills from '../../data/skills/skills';
-import projects from '../../data/projects/projects';
 
 const Home: React.FC = () => {
   return (
@@ -50,79 +50,7 @@ const Home: React.FC = () => {
       <Experience />
 
       {/* Seccion de proyectos*/}
-      <section id="proyectos" className="py-20 bg-white dark:bg-gray-900 transition-colors">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Proyectos Destacados</h2>
-            <p className="mt-4 text-gray-600 dark:text-gray-400">Del concepto a la producción.</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="group bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-              >
-                {/* Imagen del proyecto (Placeholder) */}
-                <div className="h-48 bg-indigo-100 dark:bg-gray-700 flex items-center justify-center relative overflow-hidden">
-                  <span className="text-indigo-300 dark:text-gray-500 font-bold text-4xl opacity-20">IMG</span>
-                  {/* Overlay al hacer hover */}
-                  <div className="absolute inset-0 bg-indigo-900/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-6 py-2 bg-white text-indigo-900 rounded-full font-bold text-sm hover:bg-indigo-50 transition"
-                    >
-                      Ver Demo
-                    </a>
-                  </div>
-                </div>
-
-                {/* Info del proyecto */}
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3">{project.description}</p>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.tags.map((tag, i) => (
-                      <span
-                        key={i}
-                        className="px-2.5 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-300 text-xs rounded-md font-medium"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Links */}
-                  <div className="flex justify-between items-center pt-4 border-t border-gray-200 dark:border-gray-700">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 text-sm font-medium transition-colors"
-                    >
-                      <Github size={18} className="mr-2" /> Código
-                    </a>
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 text-sm font-medium transition-colors"
-                    >
-                      Demo <ExternalLink size={18} className="ml-2" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Project />
 
       {/* Seccion de Contactos */}
       <section id="contacto" className="py-20 bg-gray-50 dark:bg-gray-950 transition-colors">
