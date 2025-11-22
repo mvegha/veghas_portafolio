@@ -65,13 +65,13 @@ const Home: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
               <a
-                href="mailto:tu@email.com"
+                href="mailto:mvegha.herrera@gmail.com"
                 className="px-8 py-4 bg-white text-indigo-600 font-bold rounded-xl hover:bg-gray-50 transition shadow-lg"
               >
                 Enviar Correo
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/mvegha"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 border-2 border-indigo-400 bg-indigo-800/50 text-white font-bold rounded-xl hover:bg-indigo-800 transition"
