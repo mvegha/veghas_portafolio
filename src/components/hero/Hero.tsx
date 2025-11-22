@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail, ArrowRight, Download } from 'lucide-react';
 import availabilityData from '../../data/availability/availability';
 import statusConfig from './statusConfig';
 import { TechStack } from './TechStack';
+import years from '../../data/experience/year';
 
 const Hero = () => {
   const activeStatus =
@@ -136,7 +137,7 @@ const Hero = () => {
                   style={{ animationDuration: '4s' }}
                 >
                   <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-50 dark:bg-green-900/30 rounded-lg flex items-center justify-center text-green-600 font-bold text-xs sm:text-base">
-                    3+
+                    {years.specific}+
                   </div>
                   <div className="block">
                     <p className="text-[10px] sm:text-xs text-gray-500 dark:text-gray-400 leading-tight">Años de</p>
