@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 
-import navLinks from '../data/view/navLinks';
-import type { NavbarProps } from '../interfaces/navigation/navbar';
+import type { NavbarProps } from '../../interfaces/layout/navbar';
+
+import navLinks from '../../data/layout/navLinks';
 
 const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleTheme }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +26,6 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleTheme }) => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          {/* Logo */}
           <div className="flex-shrink-0 flex items-center cursor-pointer">
             <span className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">&lt;DevFullStack /&gt;</span>
           </div>

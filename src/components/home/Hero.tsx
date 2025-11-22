@@ -5,6 +5,8 @@ import statusConfig from './statusConfig';
 import { TechStack } from './TechStack';
 import years from '../../data/experience/year';
 
+import cv from '../../assets/cv.pdf';
+
 const Hero = () => {
   const activeStatus =
     availabilityData.options.find(option => option.status === availabilityData.status) || availabilityData.options[0];
@@ -57,7 +59,7 @@ const Hero = () => {
                 Ver Proyectos <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="../../../public/assets/cv.pdf"
+                href={cv}
                 download="VEGA HERRERA MARIANO FULLSTACK DEV.pdf"
                 className="w-full sm:w-auto justify-center px-8 py-3.5 bg-white dark:bg-gray-800 text-gray-700 dark:text-white border border-gray-200 dark:border-gray-700 rounded-xl font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition-all flex items-center gap-2"
               >
