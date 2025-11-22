@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import Home from './views/home/Home';
 
 const App: React.FC = () => {
-  // LÓGICA DEL MODO OSCURO (DARK MODE) 
+  // LÓGICA DEL MODO OSCURO (DARK MODE)
   const [darkMode, setDarkMode] = useState<boolean>(() => {
     // Verifica si hay una preferencia guardada en localStorage o usa la del sistema
     if (typeof window !== 'undefined') {

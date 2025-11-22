@@ -1,4 +1,4 @@
-import { Briefcase, Calendar, GraduationCap } from 'lucide-react';
+import { Briefcase, Calendar, GraduationCap, Award } from 'lucide-react';
 
 import history from '../../data/experience/experience';
 
@@ -19,11 +19,17 @@ const Experience = () => {
               {/* Icono del timeline (Círculo flotante) */}
               <div
                 className={`absolute -left-3 top-0 p-2 rounded-full border-4 border-white dark:border-gray-950 shadow-md transition-colors z-10 ${
-                  item.type === 'work' ? 'bg-indigo-600' : 'bg-emerald-500'
+                  item.type === 'work'
+                    ? 'bg-indigo-600'
+                    : item.type === 'certification'
+                    ? 'bg-yellow-500'
+                    : 'bg-emerald-500'
                 }`}
               >
                 {item.type === 'work' ? (
                   <Briefcase size={16} className="text-white" />
+                ) : item.type === 'certification' ? (
+                  <Award size={16} className="text-white" />
                 ) : (
                   <GraduationCap size={16} className="text-white" />
                 )}
