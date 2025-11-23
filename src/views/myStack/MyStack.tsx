@@ -123,12 +123,11 @@ const MyStack = () => {
                 ></div>
 
                 <div className="relative z-10 text-center transform transition-transform duration-500 group-hover:scale-110">
-                  <h1 className="text-4xl pb-1 sm:text-7xl xl:text-6xl 2xl:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400 tracking-tighter">
-                    VegHa
-                  </h1>
-                  <p className="text-[10px] pt-1 sm:text-xs xl:text-[10px] 2xl:text-sm text-gray-400 uppercase tracking-[0.3em] mt-2">
-                    Dev
-                  </p>
+                  <img
+                    src="../../../public/logoIcon.svg"
+                    alt="Logo VegHa"
+                    className="w-20 sm:w-28 xl:w-24 2xl:w-32 mx-auto"
+                  />
                 </div>
 
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

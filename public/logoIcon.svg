@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="vegha_gradient" x1="0%" y1="100%" x2="100%" y2="0%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563EB"/> <stop offset="100%" stop-color="#06B6D4"/> </linearGradient>
+  </defs>
+  
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M87.1 22.9L50 60L12.9 22.9L0 35.9L50 85.9L100 35.9L87.1 22.9ZM50 50L74.1 25.9L61.2 12.9L50 24.1L38.8 12.9L25.9 25.9L50 50Z" fill="url(#vegha_gradient)"/>
+</svg>
