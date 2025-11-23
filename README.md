@@ -1,6 +1,6 @@
 <div align="center">
-  <h1 style="margin-bottom: 0;">Portafolio Profesional - Mariano Vega</h1>
-  <h3 style="margin-top:0">&lt;DevFullStack /&gt;</h3>
+  <h1>Portafolio Profesional - Mariano Vega</h1>
+  <h3>&lt;DevFullStack /&gt;</h3>
   
   <p>
     <img src="https://img.shields.io/badge/STATUS-FINISHED-success?style=for-the-badge&logo=git&logoColor=white" alt="Status" />
@@ -18,25 +18,25 @@
 
 Un vistazo a las secciones principales de la aplicación en modo oscuro.
 
-### 🏠 Inicio & Sobre Mí o de alguein mas
+### 🏠 Inicio & Sobre Mí
 
 <p align="center">
-  <img src="./public/assets/inicio-shot.png" alt="Hero Section" width="48%">
-  <img src="./public/assets/about-shot.png" alt="About Section" width="48%">
+  <img src="public/assets/inicio-shot.png" alt="Hero Section" width="48%">
+  <img src="public/assets/about-shot.png" alt="About Section" width="48%">
 </p>
 
 ### 🛠️ Stack Tecnológico & Experiencia
 
 <p align="center">
-  <img src="./public/assets/stack-shot.png" alt="Tech Stack" width="48%">
-  <img src="./public/assets/experience-shot.png" alt="Trajectory" width="48%">
+  <img src="public/assets/stack-shot.png" alt="Tech Stack" width="48%">
+  <img src="public/assets/experience-shot.png" alt="Trajectory" width="48%">
 </p>
 
 ### 🚀 Proyectos Destacados
 
 <div align="center">
-  <img src="./public/assets/projects-shot.png" alt="Projects Section" width="48%">
-  <img src="./public/assets/contact-shot.png" alt="Contact Section" width="48%">
+  <img src="public/assets/projects-shot.png" alt="Projects Section" width="48%">
+  <img src="public/assets/contact-shot.png" alt="Contact Section" width="48%">
 </div>
 
 ---
@@ -74,7 +74,7 @@ Sigue estos pasos para levantar el entorno localmente:
 1.  **Clonar el repositorio**
 
     ```bash
-    git clone https://github.com/mvegha/mi-portafolio.git
+    git clone [https://github.com/mvegha/mi-portafolio.git](https://github.com/mvegha/mi-portafolio.git)
     cd mi-portafolio
     ```
 
