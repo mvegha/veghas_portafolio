@@ -21,22 +21,22 @@ Un vistazo a las secciones principales de la aplicación en modo oscuro.
 ### 🏠 Inicio & Sobre Mí
 
 <p align="center">
-  <img src="public/assets/inicio-shot.png" alt="Hero Section" width="48%">
-  <img src="public/assets/about-shot.png" alt="About Section" width="48%">
+  <img src="https://cdn.jsdelivr.net/gh/mvegha/veghas_portafolio@main/public/assets/inicio-shot.png" alt="Hero Section" width="48%">
+  <img src="https://cdn.jsdelivr.net/gh/mvegha/veghas_portafolio@main/public/assets/about-shot.png" alt="About Section" width="48%">
 </p>
 
 ### 🛠️ Stack Tecnológico & Experiencia
 
 <p align="center">
-  <img src="public/assets/stack-shot.png" alt="Tech Stack" width="48%">
-  <img src="public/assets/experience-shot.png" alt="Trajectory" width="48%">
+  <img src="https://cdn.jsdelivr.net/gh/mvegha/veghas_portafolio@main/public/assets/stack-shot.png" alt="Tech Stack" width="48%">
+  <img src="https://cdn.jsdelivr.net/gh/mvegha/veghas_portafolio@main/public/assets/experience-shot.png" alt="Trajectory" width="48%">
 </p>
 
 ### 🚀 Proyectos Destacados
 
 <div align="center">
-  <img src="public/assets/projects-shot.png" alt="Projects Section" width="48%">
-  <img src="public/assets/contact-shot.png" alt="Contact Section" width="48%">
+  <img src="https://cdn.jsdelivr.net/gh/mvegha/veghas_portafolio@main/public/assets/projects-shot.png" alt="Projects Section" width="48%">
+  <img src="https://cdn.jsdelivr.net/gh/mvegha/veghas_portafolio@main/public/assets/contact-shot.png" alt="Contact Section" width="48%">
 </div>
 
 ---
