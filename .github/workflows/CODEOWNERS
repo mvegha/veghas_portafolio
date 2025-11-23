@@ -1,0 +1,8 @@
+# Sintaxis: [Patrón de archivo] [Usuario de GitHub]
+
+# Protege todo el pipeline de CI/CD
+.github/workflows/  @mvegha
+
+# Protege la configuración de dependencias (opcional)
+package.json        @mvegha
+package-lock.json   @mvegha
