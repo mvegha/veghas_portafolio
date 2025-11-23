@@ -5,7 +5,7 @@ import './index.css';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 
-import Home from './views/home/Home';
+import Home from './views/Home';
 
 const App: React.FC = () => {
   // Logica del modo oscuro (DARK MODE)

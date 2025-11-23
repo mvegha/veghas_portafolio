@@ -1,6 +1,6 @@
-import type { Project } from '../../interfaces/app/app';
+import type { ProjectProps } from '../../interfaces/project/project';
 
-const projects: Project[] = [
+const projects: ProjectProps[] = [
   {
     title: 'App "Extensionismo" (Gestión Agrícola)',
     description:

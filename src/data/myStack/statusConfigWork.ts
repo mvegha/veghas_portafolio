@@ -1,4 +1,4 @@
-const statusConfig = {
+const statusConfigWork = {
   available: {
     dot: 'bg-emerald-500',
     bg: 'bg-emerald-50 dark:bg-emerald-900/30',
@@ -22,4 +22,4 @@ const statusConfig = {
   }
 };
 
-export default statusConfig;
+export default statusConfigWork;

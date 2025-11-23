@@ -1,13 +1,14 @@
 import { Github, Linkedin, Mail, ArrowRight, Download } from 'lucide-react';
 
-import availabilityData from '../../data/availability/availability';
-import statusConfig from './statusConfig';
-import { TechStack } from './TechStack';
-import years from '../../data/experience/year';
+import TecStack from '../../components/myStack/TecStack';
+
+import statusConfig from '../../data/myStack/statusConfigWork';
+import years from '../../data/myStack/year';
+import availabilityData from '../../data/myStack/availability';
 
 import cv from '../../assets/cv.pdf';
 
-const Hero = () => {
+const MyStack = () => {
   const activeStatus =
     availabilityData.options.find(option => option.status === availabilityData.status) || availabilityData.options[0];
   const visual = statusConfig[activeStatus.status];
@@ -107,7 +108,7 @@ const Hero = () => {
               </div>
 
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <TechStack />
+                <TecStack />
               </div>
 
               <div className="relative w-32 h-32 sm:w-52 sm:h-52 xl:w-56 xl:h-56 2xl:w-72 2xl:h-72 rounded-full shadow-2xl z-20 border-4 border-white dark:border-gray-800 bg-gray-900 flex items-center justify-center group overflow-hidden">
@@ -157,4 +158,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default MyStack;

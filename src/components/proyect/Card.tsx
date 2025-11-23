@@ -1,4 +1,5 @@
 import { Github, ExternalLink, Image } from 'lucide-react';
+
 import type { CardProps } from '../../interfaces/project/card';
 
 const Card = ({ project, extensionismoDiagram, isExpanded, onToggle }: CardProps) => {

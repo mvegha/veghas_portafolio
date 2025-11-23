@@ -1,6 +1,6 @@
 import type { LucideIcon } from 'lucide-react';
 
-export interface StackItem {
+export interface StackItemProps {
   angle: number;
   label: string;
   text: string;

@@ -1,8 +1,8 @@
 import { Smartphone, Globe, Server, Cloud, Database } from 'lucide-react';
 
-import type { StackItem } from '../../interfaces/card/card';
+import type { StackItemProps } from '../../interfaces/myStack/stackItem';
 
-export const stackItems: StackItem[] = [
+const stackItems: StackItemProps[] = [
   {
     angle: 233,
     label: 'Stack',
@@ -52,3 +52,5 @@ export const stackItems: StackItem[] = [
     bg: 'bg-cyan-500/10'
   }
 ];
+
+export default stackItems;

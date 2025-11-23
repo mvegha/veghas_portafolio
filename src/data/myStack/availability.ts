@@ -1,6 +1,6 @@
-import type { AvailabilityConfig } from '../../interfaces/availability/availability';
+import type { AvailabilityConfigProps } from '../../interfaces/myStack/availability';
 
-const availability: AvailabilityConfig = {
+const availability: AvailabilityConfigProps = {
   // Cambio estado de acuerdo a mi disponibilidad ('available' | 'unavailable' | 'preorder')
   status: 'available',
   options: [

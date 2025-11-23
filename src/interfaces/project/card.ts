@@ -1,7 +1,7 @@
-import type { Project } from '../../interfaces/app/app';
+import type { ProjectProps } from './project';
 
 export interface CardProps {
-  project: Project;
+  project: ProjectProps;
   extensionismoDiagram: string;
   isExpanded: boolean;
   onToggle: () => void;

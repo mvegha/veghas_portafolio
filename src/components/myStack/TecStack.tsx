@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
-import { stackItems } from '../../data/cards/cards';
 import calculateTranslate from '../../helper/calculateTranslate';
 
-export const TechStack: React.FC = () => {
+import stackItems from '../../data/myStack/stackItem';
+
+const TecStack: React.FC = () => {
   const [windowWidth, setWindowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 640);
   const [activeText, setActiveText] = useState<boolean>(true);
 
@@ -83,3 +84,5 @@ export const TechStack: React.FC = () => {
     </div>
   );
 };
+
+export default TecStack;
