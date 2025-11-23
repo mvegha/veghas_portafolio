@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>Portafolio Profesional - Mariano Vega</h1>
-  <h3>&lt;DevFullStack /&gt;</h3>
+  <h1 style="margin-bottom: 0;">Portafolio Profesional - Mariano Vega</h1>
+  <h3 style="margin-top: 0;">&lt;DevFullStack /&gt;</h3>
   
   <p>
     <img src="https://img.shields.io/badge/STATUS-FINISHED-success?style=for-the-badge&logo=git&logoColor=white" alt="Status" />
@@ -71,20 +71,20 @@ Más allá de la interfaz visual, el código está estructurado profesionalmente
 
 Sigue estos pasos para levantar el entorno localmente:
 
-1.  **Clonar el repositorio**
+1.  **📥 Clonar el repositorio**
 
     ```bash
-    git clone [https://github.com/mvegha/mi-portafolio.git](https://github.com/mvegha/mi-portafolio.git)
-    cd mi-portafolio
+    git clone [https://github.com/mvegha/veghas_portafolio.git](https://github.com/mvegha/veghas_portafolio.git)
+    cd veghas_portafolio
     ```
 
-2.  **Instalar dependencias (NPM)**
+2.  **📦 Instalar dependencias (NPM)**
 
     ```bash
     npm install
     ```
 
-3.  **Ejecutar en desarrollo**
+3.  **🚀 Ejecutar en desarrollo**
     ```bash
     npm run dev
     ```
@@ -106,5 +106,5 @@ Sigue estos pasos para levantar el entorno localmente:
 ---
 
 <p align="center">
-    © 2025 Desarrollado por <b>Mariano Vega</b> • DevFullStack
+    © 2025 - Presente • Desarrollado por <b>Mariano Vega</b>
 </p>
