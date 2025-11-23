@@ -38,7 +38,10 @@ jobs:
 
       - name: Build
         run: npm run build
-
+        env:
+          # Mapeamos los secretos de GitHub a variables de entorno para Vite
+          VITE_EMAIL: ${{ secrets.VITE_EMAIL }}
+          
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

@@ -8,6 +8,8 @@ import availabilityData from '../../data/myStack/availability';
 
 import cv from '../../assets/cv.pdf';
 
+const email = import.meta.env.VITE_EMAIL;
+
 const MyStack = () => {
   const activeStatus =
     availabilityData.options.find(option => option.status === availabilityData.status) || availabilityData.options[0];
@@ -86,7 +88,7 @@ const MyStack = () => {
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:mvegha.herrera@gmail.com"
+                href={`mailto:${email}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors transform hover:scale-110"
@@ -123,11 +125,7 @@ const MyStack = () => {
                 ></div>
 
                 <div className="relative z-10 text-center transform transition-transform duration-500 group-hover:scale-110">
-                  <img
-                    src="../../../public/logoIcon.svg"
-                    alt="Logo VegHa"
-                    className="w-20 sm:w-28 xl:w-24 2xl:w-32 mx-auto"
-                  />
+                  <img src="./logoIcon.svg" alt="Logo VegHa" className="w-20 sm:w-28 xl:w-24 2xl:w-32 mx-auto" />
                 </div>
 
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

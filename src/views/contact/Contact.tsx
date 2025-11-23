@@ -1,3 +1,5 @@
+const email = import.meta.env.VITE_EMAIL;
+
 const Contact = () => {
   return (
     <section id="contactame" className="py-20 bg-gray-50 dark:bg-gray-950 transition-colors">
@@ -12,7 +14,7 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
             <a
-              href="mailto:mvegha.herrera@gmail.com"
+              href={`mailto:${email}`}
               className="px-8 py-4 bg-white text-indigo-600 font-bold rounded-xl hover:bg-gray-50 transition shadow-lg"
             >
               Enviar Correo
