@@ -9,6 +9,8 @@ const projects: ProjectProps[] = [
     tags: ['AWS', 'Node', 'Serverless', 'Git', 'React Native', 'React', 'Nest', 'SQLite', 'Tailwind'],
     github: '#',
     demo: '#',
+    imageUrl: 'extensionismo.webp',
+    imageAlt: 'Proyecto Extensionismo',
     isArchitecturalDiagram: true
   },
   {
@@ -19,6 +21,8 @@ const projects: ProjectProps[] = [
     tags: ['Node', 'MongoDB', 'Git', 'React', 'Express', 'Docker', 'Linux', 'PostgreSQL', 'Tailwind'],
     github: '#',
     demo: '#',
+    imageUrl: 'qaliproveedor.png',
+    imageAlt: 'Proyecto Qaliproveedor',
     isArchitecturalDiagram: false
   },
   {
@@ -29,6 +33,8 @@ const projects: ProjectProps[] = [
     tags: ['React', 'Node', 'Express', 'MySQL', 'Tailwind', 'Linux', 'Redes'],
     github: '#',
     demo: '#',
+    imageUrl: 'cm.jpg',
+    imageAlt: 'Proyecto Cable Mundo',
     isArchitecturalDiagram: false
   }
 ];

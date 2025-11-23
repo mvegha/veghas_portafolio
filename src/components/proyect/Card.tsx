@@ -3,10 +3,22 @@ import { Github, ExternalLink, Image } from 'lucide-react';
 import type { CardProps } from '../../interfaces/project/card';
 
 const Card = ({ project, extensionismoDiagram, isExpanded, onToggle }: CardProps) => {
+  const getImage = (name: string) => {
+    return new URL(`../../assets/project/${name}`, import.meta.url).href;
+  };
+
   return (
     <div className="group bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-fit">
       <div className="h-48 bg-indigo-100 dark:bg-gray-700 flex items-center justify-center relative overflow-hidden rounded-t-2xl">
-        <span className="text-indigo-300 dark:text-gray-500 font-bold text-4xl opacity-20">IMG</span>
+        {project.imageUrl ? (
+          <img
+            src={getImage(project.imageUrl)}
+            alt={project.imageAlt}
+            className="text-indigo-300 dark:text-gray-500 font-bold text-4xl opacity-20"
+          />
+        ) : (
+          <span className="text-indigo-300 dark:text-gray-500 font-bold text-4xl opacity-20">IMG</span>
+        )}
 
         <div className="absolute inset-0 bg-indigo-900/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           {project.demo !== '#' ? (

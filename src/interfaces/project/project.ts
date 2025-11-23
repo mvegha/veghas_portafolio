@@ -4,5 +4,7 @@ export interface ProjectProps {
   tags: string[];
   github: string;
   demo: string;
+  imageUrl: string;
+  imageAlt: string;
   isArchitecturalDiagram: boolean;
 }
